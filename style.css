@@ -1,0 +1,60 @@
+/* --- File: style.css (UPDATED) --- */
+
+/* 1. Set the Graphical Background Image */
+.stApp {
+    /* IMPORTANT: Change 'hospital_bg.jpg' to your actual file name if different */
+    background-image: url("hospital_bg.jpg"); 
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-color: #e0f0ff; /* Fallback color */
+}
+
+/* 2. Style the custom banner for maximum visibility */
+.custom-banner {
+    background-color: #004d66; /* Dark professional blue for high contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* 3. Ensure Content Readability */
+/* Adds a slightly opaque white/light blue background to the main content area */
+[data-testid="stAppViewBlockContainer"] {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white layer */
+    padding: 30px; 
+    border-radius: 12px;
+}
+
+/* 4. Style KPI Cards (Bold and Large) */
+[data-testid="stMetricValue"] {
+    font-size: 2.4em;
+    font-weight: 900;
+    color: #0077B6; /* Hospital Blue */
+}
+[data-testid="stMetricLabel"] {
+    font-weight: bold;
+    color: #333;
+}
+
+/* 5. Service Card Styling (Enhanced Visuals) */
+.service-card {
+    border: 1px solid #0077B6;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background-color: #ffffff;
+    transition: transform 0.2s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Hide default footer */
+footer {
+    visibility: hidden;
+}
